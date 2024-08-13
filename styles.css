@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Preto */
+    color: #fff; /* Branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    animation: backgroundChange 2s infinite; /* Animação de mudança de cor do fundo */
+}
+
+.blinking-text {
+    font-size: 2em;
+    animation: blink 1s infinite; /* Animação de piscar do texto */
+}
+
+@keyframes blink {
+    0%, 100% {
+        color: #fff; /* Branco */
+    }
+    50% {
+        color: #4CAF50; /* Verde */
+    }
+}
+
+@keyframes backgroundChange {
+    0%, 100% {
+        background-color: #000; /* Preto */
+    }
+    50% {
+        background-color: #4CAF50; /* Verde */
+    }
+}
